@@ -32,10 +32,14 @@ jobs:
           echo "CM_ID=1553" >> "$GITHUB_ENV"
           echo "GITHUB_PR_REGEX='^(\\w*)_(lr1)$'" >> "$GITHUB_ENV"
       - 
+        name: Set env from secrets
+        run: |
+          echo "MOODLE_ACCESS_TOKEN=secrets.MOODLE_ACCESS_TOKEN" >> "$GITHUB_ENV"
+      - 
         name: Check out code
         uses: actions/checkout@v2
       - 
         name: Run script
-        uses: Dmitriy129/moodle-github-sync-2@0.0.4
+        uses: Dmitriy129/moodle-github-sync-2@0.0.5
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
