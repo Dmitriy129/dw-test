@@ -40,6 +40,6 @@ jobs:
         uses: actions/checkout@v2
       - 
         name: Run script
-        uses: Dmitriy129/moodle-github-sync-2@0.0.6
+        uses: Dmitriy129/moodle-github-sync-2@0.0.7
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
