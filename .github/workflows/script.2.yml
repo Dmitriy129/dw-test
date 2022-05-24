@@ -41,5 +41,6 @@ jobs:
       - 
         name: Run script
         uses: Dmitriy129/moodle-github-sync-2@0.0.10
+        shell: bash
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
