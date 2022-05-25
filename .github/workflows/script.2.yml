@@ -46,18 +46,8 @@ jobs:
         name: "000"
         run: ls "${{ github.workspace }}" .
         shell: bash
-      # - 
-      #   name: Run script 1
-      #   run: docker run -v ${{ github.workspace }}/${{ env.PR_BOT_CONFIG_PATH }}:./configs -e COURSE_ID="${{env.COURSE_ID}}" -e CM_ID="${{env.CM_ID}}" -e GITHUB_REPO="${{ github.repository }}" -e GITHUB_PR_REGEX="${{env.GITHUB_PR_REGEX}}" -e GITHUB_ACCESS_TOKEN="${{ github.token }}" -e MOODLE_ACCESS_TOKEN="${{ env.MOODLE_ACCESS_TOKEN }}" --rm fox1209/gm_scripts:1.0.3  pwd
-      #   # run: docker run -v ${{ github.workspace }}/${{ env.PR_BOT_CONFIG_PATH }}:/configs -e COURSE_ID="${{env.COURSE_ID}}" -e CM_ID="${{env.CM_ID}}" -e GITHUB_REPO="${{ github.repository }}" -e GITHUB_PR_REGEX="${{env.GITHUB_PR_REGEX}}" -e GITHUB_ACCESS_TOKEN="${{ github.token }}" -e MOODLE_ACCESS_TOKEN="${{ env.MOODLE_ACCESS_TOKEN }}" --rm fox1209/gm_scripts:1.0.3  python main.py script2
-      #   shell: bash
       - 
-        name: Run script 3
-        run: docker run -v ${{ github.workspace }}/${{ env.PR_BOT_CONFIG_PATH }}:/home/jobuser/configs -e COURSE_ID="${{env.COURSE_ID}}" -e CM_ID="${{env.CM_ID}}" -e GITHUB_REPO="${{ github.repository }}" -e GITHUB_PR_REGEX="${{env.GITHUB_PR_REGEX}}" -e GITHUB_ACCESS_TOKEN="${{ github.token }}" -e MOODLE_ACCESS_TOKEN="${{ env.MOODLE_ACCESS_TOKEN }}" --rm fox1209/gm_scripts:1.0.3 python main.py script2
-        shell: bash
-
-      # - 
-      #   name: Run script
-      #   uses: Dmitriy129/moodle-github-sync-2@0.1.3
+        name: Run script
+        uses: Dmitriy129/moodle-github-sync-2@0.1.4
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
