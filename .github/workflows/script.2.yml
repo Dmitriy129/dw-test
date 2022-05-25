@@ -48,7 +48,8 @@ jobs:
         shell: bash
       - 
         name: Run script
-        run: docker run -v ${{ github.workspace }}/${{ env.PR_BOT_CONFIG_PATH }}:/configs -e COURSE_ID="${{env.COURSE_ID}}" -e CM_ID="${{env.CM_ID}}" -e GITHUB_REPO="${{ github.repository }}" -e GITHUB_PR_REGEX="${{env.GITHUB_PR_REGEX}}" -e GITHUB_ACCESS_TOKEN="${{ github.token }}" -e MOODLE_ACCESS_TOKEN="${{ env.MOODLE_ACCESS_TOKEN }}" --rm fox1209/gm_scripts:1.0.3  python main.py script2
+        run: docker run -v ${{ github.workspace }}/${{ env.PR_BOT_CONFIG_PATH }}:/configs -e COURSE_ID="${{env.COURSE_ID}}" -e CM_ID="${{env.CM_ID}}" -e GITHUB_REPO="${{ github.repository }}" -e GITHUB_PR_REGEX="${{env.GITHUB_PR_REGEX}}" -e GITHUB_ACCESS_TOKEN="${{ github.token }}" -e MOODLE_ACCESS_TOKEN="${{ env.MOODLE_ACCESS_TOKEN }}" --rm fox1209/gm_scripts:1.0.3  ls
+        # run: docker run -v ${{ github.workspace }}/${{ env.PR_BOT_CONFIG_PATH }}:/configs -e COURSE_ID="${{env.COURSE_ID}}" -e CM_ID="${{env.CM_ID}}" -e GITHUB_REPO="${{ github.repository }}" -e GITHUB_PR_REGEX="${{env.GITHUB_PR_REGEX}}" -e GITHUB_ACCESS_TOKEN="${{ github.token }}" -e MOODLE_ACCESS_TOKEN="${{ env.MOODLE_ACCESS_TOKEN }}" --rm fox1209/gm_scripts:1.0.3  python main.py script2
         shell: bash
 
       # - 
