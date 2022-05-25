@@ -24,7 +24,7 @@ jobs:
       - 
         name: set config path
         run: |
-          echo "PR_BOT_CONFIG_PATH='bot_config'" >> "$GITHUB_ENV"
+          echo "PR_BOT_CONFIG_PATH=bot_config" >> "$GITHUB_ENV"
       - 
         name: workflow_dispatch
         if: github.event_name == 'workflow_dispatch'
