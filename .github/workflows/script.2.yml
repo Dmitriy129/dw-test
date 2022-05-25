@@ -17,7 +17,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-     - 
+      - 
         name: set config path
         run: |
           echo "PR_BOT_CONFIG_PATH='./bot_config'" >> "$GITHUB_ENV"
