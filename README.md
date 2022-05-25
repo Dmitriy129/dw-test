@@ -118,3 +118,10 @@ curl --location --request GET 'http://e.moevm.info/login/token.php?username=<use
     GITHUB_PR_REGEX - чтоб определить список PR
 
 Проходится по всем студентам получившим оценку. По оценке и по конфигу bot_config/main.json > github > gradeLabel определяет, что нужно сделать с PR.
+
+
+## Список студентов 
+
+Заполнить таблицу студентов 
+
+пример: https://docs.google.com/spreadsheets/d/1-KENToVk8vYABspbj-7gUsojEO9lFMzffeNVVACqPEQ/edit#gid=0
