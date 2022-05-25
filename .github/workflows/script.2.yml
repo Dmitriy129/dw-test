@@ -18,10 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - 
-        name: "000"
-        run: ls "${{ github.workspace }}" .
-        shell: bash
-      - 
         name: set config path
         run: |
           echo "PR_BOT_CONFIG_PATH=bot_config" >> "$GITHUB_ENV"
@@ -46,6 +42,10 @@ jobs:
       - 
         name: Check out code
         uses: actions/checkout@v2
+      - 
+        name: "000"
+        run: ls "${{ github.workspace }}" .
+        shell: bash
       - 
         name: Run script
         uses: Dmitriy129/moodle-github-sync-2@0.1.3
