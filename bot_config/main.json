@@ -1,8 +1,5 @@
 {
     "github": {
-        "credentials": {
-            "accessToken": "!!!deprecated!!! read from env GITHUB_ACCESS_TOKEN"
-        },
         "gradeLabel": {
             "defaultTemplate": "#Moodle",
             "defaultColor": "c4c",
@@ -69,10 +66,7 @@
         }
     },
     "moodle": {
-        "baseUrl": "http://e.moevm.info",
-        "credentials": {
-            "token": "!!!deprecated!!! read from env MOODLE_ACCESS_TOKEN"
-      }
+        "baseUrl": "http://e.moevm.info"
     },
     "googleSheet": {
         "id": "1-KENToVk8vYABspbj-7gUsojEO9lFMzffeNVVACqPEQ",
