@@ -18,6 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - 
+        name: "000"
+        run: ls pwd
+        shell: bash
+      - 
         name: set config path
         run: |
           echo "PR_BOT_CONFIG_PATH='bot_config'" >> "$GITHUB_ENV"
