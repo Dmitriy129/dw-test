@@ -19,7 +19,7 @@ jobs:
     steps:
       - 
         name: "000"
-        run: ls "${{$PWD}}"
+        run: ls "${{$GITHUB_WORKSPACE}}"
         shell: bash
       - 
         name: set config path
