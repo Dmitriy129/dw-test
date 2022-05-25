@@ -17,6 +17,6 @@ jobs:
         uses: actions/checkout@v2
       - 
         name: Run script
-        uses: Dmitriy129/moodle-github-sync-1@0.1.0
+        uses: Dmitriy129/moodle-github-sync-1@0.1.1
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
